@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alberto Mokak Teguia</title>
+<meta name="description" content="Alberto Mokak Teguia — Assistant Professor of Finance, UBC Sauder School of Business. Behavioral finance, institutional investors, liquidity, OTC markets.">
+<meta name="keywords" content="Alberto Teguia, Mokak Teguia, UBC Sauder, finance, behavioral finance, institutional investors, liquidity, OTC markets, asset pricing, heterogeneous beliefs, disclosure">
+<style>
+  :root{
+    --ink:#1b2545; --link:#7a1f2b; --link-h:#9c3340;
+    --muted:#6b7280; --rule:#e2ddd0; --bg:#fffdf8; --max:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;font-size:18px;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:50px 26px 80px}
+  a{color:var(--link);text-decoration:none;border-bottom:1px solid transparent;transition:.18s}
+  a:hover{color:var(--link-h);border-bottom-color:var(--link-h)}
+
+  /* header: photo left, everything right — both exactly 225px tall (180w x 480:600 ratio) */
+  .head{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:start}
+  img.photo{width:180px;height:225px;object-fit:cover;display:block;border:1px solid var(--rule);
+    border-radius:2px;background:#f2eee3}
+  .headtext{height:225px;display:flex;flex-direction:column;justify-content:space-between}
+  h1{font-size:2rem;font-weight:700;letter-spacing:-.015em;margin:0}
+  .aff{font-size:1.02rem;line-height:1.5}
+  .contact{font-size:1rem;line-height:1.55}
+  .toplinks{font-size:.94rem;white-space:nowrap;overflow-x:auto}
+  .sep{color:var(--muted);margin:0 .3rem}
+
+  .interests{margin:28px 0 4px;font-size:1.04rem}
+
+  h2{font-size:1.12rem;font-weight:700;margin:32px 0 4px;padding-bottom:.28rem;
+     border-bottom:1px solid var(--ink)}
+  .paper{margin:16px 0}
+  .ptitle{font-weight:700;font-size:1.02rem;color:var(--ink)}
+  .ptitle a{color:var(--ink)}
+  .ptitle a:hover{color:var(--link)}
+  .authors{color:#46506e;font-size:.96rem;margin:.05rem 0}
+  .summary{color:#3b425a;font-size:.96rem;margin:.18rem 0}
+  .venue{font-style:italic;color:var(--muted);font-size:.95rem}
+  .venue .stat{font-style:normal}
+  .status{font-style:italic;color:var(--muted)}
+  ul.wip{list-style:none;margin:.3rem 0}
+  ul.wip li{padding:.2rem 0 .2rem 1.1rem;position:relative;font-size:1rem}
+  ul.wip li::before{content:"\2014";position:absolute;left:0;color:var(--link)}
+
+  footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);
+    color:var(--muted);font-size:.85rem}
+  @media(max-width:560px){
+    .head{grid-template-columns:1fr;gap:18px;align-items:start}
+    .headtext{height:auto;display:block}
+    .headtext h1{margin-bottom:.5rem}
+    .headtext .contact{margin-top:.55rem}
+    .headtext .toplinks{margin-top:.7rem;white-space:normal}
+    img.photo{width:160px;height:200px}
+    body{font-size:17px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <img class="photo" src="files/photo.jpg" alt="Alberto Mokak Teguia"
+         onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='https://www.sauder.ubc.ca/sites/default/files/images/faculty/Alberto%2520Mokak%2520Teguia.jpg';}else{this.style.display='none';}">
+    <div class="headtext">
+      <h1>Alberto Mokak Teguia</h1>
+      <div class="aff">
+        <a href="https://www.sauder.ubc.ca/people/alberto-mokak-teguia">Assistant Professor of Finance</a><br>
+        <a href="https://www.sauder.ubc.ca/">Sauder School of Business</a><br>
+        <a href="https://www.ubc.ca/">University of British Columbia</a>
+      </div>
+      <div class="contact">
+        Office: Henry Angus 871<br>
+        Email: <a href="mailto:alberto.mokakteguia@sauder.ubc.ca">alberto.mokakteguia@sauder.ubc.ca</a><br>
+        Tel: +1 604-822-4886
+      </div>
+      <div class="toplinks">
+        <a href="files/Teguia_CV.pdf">Curriculum Vitae</a>
+        <span class="sep">&middot;</span>
+        <a href="#publications">Publications</a>
+        <span class="sep">&middot;</span>
+        <a href="#working-papers">Working Papers</a>
+        <span class="sep">&middot;</span>
+        <a href="#work-in-progress">Work in Progress</a>
+        <span class="sep">&middot;</span>
+        <a href="https://www.sauder.ubc.ca/people/alberto-mokak-teguia">UBC profile</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="interests">
+    My broad areas of research interest are behavioral finance, institutional
+    investors, liquidity, and OTC markets.
+  </p>
+
+  <h2 id="publications">Publications</h2>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5200216">Granularity in Asset Markets</a></div>
+    <div class="authors">with Sergei Glebkin and Semyon Malamud</div>
+    <div class="summary">When large, strategic investors internalize their price impact,
+    non-competitive markets can be more liquid than competitive ones, and capital flows toward
+    risk-averse investors can lower safe-asset prices in flight-to-safety episodes.</div>
+    <div class="venue"><em>Journal of Finance</em>, <span class="status">conditionally accepted</span></div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3692589">Illiquidity and Higher Cumulants</a></div>
+    <div class="authors">with Sergei Glebkin and Semyon Malamud</div>
+    <div class="summary">Option bid&ndash;ask spreads track higher moments of payoffs and can move
+    in directions conventional wisdom would not predict.</div>
+    <div class="venue"><em>Review of Financial Studies</em>, 2023, <span class="stat">36(5):2131&ndash;2173</span></div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3068930">Signaling in OTC Markets: Benefits and Costs of Transparency</a></div>
+    <div class="authors">with Kerry Back and Ruomeng Liu</div>
+    <div class="summary">Post-trade transparency forces costly signaling by dealers, lowering spreads
+    and raising volume&mdash;and can benefit dealers as well as investors.</div>
+    <div class="venue"><em>Journal of Financial and Quantitative Analysis</em>, 2020, <span class="stat">55(1):47&ndash;75</span></div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2589390">Increasing Risk Aversion, Habits, and Life-Cycle Investing</a></div>
+    <div class="authors">with Kerry Back and Ruomeng Liu</div>
+    <div class="summary">Investors with increasing relative risk aversion optimally reduce risky-asset
+    holdings as they age, supporting common life-cycle investment advice.</div>
+    <div class="venue"><em>Mathematics and Financial Economics</em>, 2019, <span class="stat">13(2):287&ndash;302</span></div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://doi.org/10.1016/j.econlet.2017.02.012">Estimating Asset Pricing Models with Frictions</a></div>
+    <div class="authors">with Kevin Crotty</div>
+    <div class="summary">Jointly estimating risk aversion and trading costs; short-selling costs for
+    Treasuries help resolve the risk-free-rate puzzle.</div>
+    <div class="venue"><em>Economics Letters</em>, 2017, <span class="stat">154:24&ndash;27</span></div>
+  </div>
+
+  <h2 id="working-papers">Working Papers</h2>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3234406">Autocracies, Infrastructure, and Credit Spreads</a></div>
+    <div class="authors">with Isha Agarwal, Ron Giammarino, and Emmanuel Yimfor</div>
+    <div class="summary">How autocratic restrictions on property rights&mdash;limits on emigration and
+    the power to expropriate&mdash;shape debt financing of infrastructure and credit spreads.</div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4554523">Price Formation in the Foreign Exchange Market</a></div>
+    <div class="authors">with Florent Gallien, Sergei Glebkin, Serge Kassibrakis, and Semyon Malamud</div>
+    <div class="summary">Joint price formation in the dealer-to-dealer and dealer-to-customer segments
+    of the FX market, accounting for dealer heterogeneity and market power.</div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4639843">Strategic Trading with Wealth Effects</a></div>
+    <div class="authors">with Sergei Glebkin and Semyon Malamud</div>
+    <div class="summary">With large investors and many risky assets, liquidity risk is priced in
+    equilibrium, generating deviations from the consumption-CAPM.</div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle">Law of Small Numbers and Hysteresis in Asset Prices and Portfolio Choices</div>
+    <div class="summary">Believing small samples are representative produces hysteresis in beliefs&mdash;and,
+    in turn, the disposition effect, momentum, and reversals.</div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2478504">Asymmetric Information and Liquidity Provision</a></div>
+    <div class="summary">Information asymmetry makes potential predators more likely to provide liquidity
+    than to trade predatorily against a distressed trader, helping stabilize illiquid markets.</div>
+  </div>
+
+  <div class="paper">
+    <div class="ptitle"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3732319">Learning (Not) to Trade: Lindy&rsquo;s Law in Retail Traders</a></div>
+    <div class="authors">with Teodor Godina, Serge Kassibrakis, Semyon Malamud, and Jiahua Xu</div>
+  </div>
+
+  <h2 id="work-in-progress">Work in Progress</h2>
+  <ul class="wip">
+    <li>Lazy Bayesian (with Lorenzo Garlappi)</li>
+    <li>Systemic Internalization (with Edwin Hu and Shawn O&rsquo;Donoghue)</li>
+    <li>On the Volatility&ndash;Volume Relationship: Evidence from a Natural Experiment</li>
+    <li>Investment Games (with Kerry Back)</li>
+  </ul>
+
+  <footer>
+    Alberto Mokak Teguia &middot; UBC Sauder School of Business
+  </footer>
+
+</div>
+</body>
+</html>
